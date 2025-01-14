@@ -5,7 +5,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/myReact/', 
+  // base: '/myReact/', 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // '@'를 'src'로 설정
