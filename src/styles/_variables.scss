@@ -1,0 +1,78 @@
+
+
+/* color */
+$black:#000;
+$white:#fff;
+$grayLine:#e5e5e5;
+$gray:#f9f8f7;
+$red:pink;
+
+/*
+* calc
+* @include calc('width', 250px)
+*/
+@mixin calc($property, $expression) {
+    #{$property}: calc( 100% - #{$expression});
+}
+
+/*
+* calc
+* @include camobile-size-calc('width', 87px);
+*/
+@mixin mobile-size-calc($property, $expression) {
+	#{$property}: (#{$expression/2}px);
+}
+
+/*
+* textEllipsis 한 줄
+* @include textEllipsis;
+*/
+@mixin textEllipsis() {
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+}
+
+/*
+* textEllipsis 두 줄
+* @include textEllipsisClamp;
+*/
+@mixin textEllipsisClamp() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*
+* translate3D
+* @include translate3D;
+*/
+@mixin translate3D () {
+-webkit-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+        -o-transform: translate3D(0, 0, 0);
+        transform: translate3D(0, 0, 0);
+}
+
+
+/*
+* scale
+* @include scale(-1, 1);
+*/
+@mixin scale ($sx, $sy) {
+-webkit-transform: scale($sx, $sy);
+    -ms-transform: scale($sx, $sy);
+        -o-transform: scale($sx, $sy);
+            transform: scale($sx, $sy);
+}
+
+/*
+* transition
+* @include allTransition();
+*/
+@mixin allTransition () {
+    transition: all cubic-bezier(0.65, 0.05, 0.36, .5) .2s;
+}

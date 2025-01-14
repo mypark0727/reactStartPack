@@ -1,0 +1,17 @@
+@use "@/styles/_variables.scss" as *;
+
+*,*:before,*:after{margin:0; padding:0; box-sizing:border-box; font-family: 'MyFont', sans-serif;}
+html{font-size:14px;}
+a,button{
+    color:black; text-decoration: none; background-color:transparent; border:0; cursor: pointer;
+    &:focus-visible {outline:1px soild black;}
+}
+ul,li{list-style: none;}
+
+.blind {position: absolute; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; width: 1px; height: 1px;}
+
+@media all and (max-width:1080px) {
+    html{font-size:10px;}
+}
+
+body{background:$red;}

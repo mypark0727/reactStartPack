@@ -1,0 +1,32 @@
+
+@font-face {
+	font-family: MyFont;
+	font-weight: 400;
+	src: url('../assets/fonts/SpoqaHanSansLight.eot');
+	src: local(☺),
+	url('../assets/fonts/SpoqaHanSansLight.woff2') format('woff2'),
+	url('../assets/fonts/SpoqaHanSansLight.woff') format('woff'),
+	url('../assets/fonts/SpoqaHanSansLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: MyFont;
+	font-weight: 500;
+	src: url('../assets/fonts/SpoqaHanSansRegular.eot');
+	src: local(☺),
+	url('../assets/fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+	url('../assets/fonts/SpoqaHanSansRegular.woff') format('woff'),
+	url('../assets/fonts/SpoqaHanSansRegular.ttf') format('truetype');
+}
+@font-face {
+	font-family: MyFont;
+	font-weight: 700;
+	src: url('../assets/fonts/SpoqaHanSansLight.eot');
+	src: local(☺),
+	url('../assets/fonts/SpoqaHanSansLight.woff2') format('woff2'),
+	url('../assets/fonts/SpoqaHanSansLight.woff') format('woff'),
+	url('../assets/fonts/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@media all and (max-width:768px) {
+    html{font-size:10px; }
+}
